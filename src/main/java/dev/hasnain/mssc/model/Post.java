@@ -1,4 +1,6 @@
 package dev.hasnain.mssc.model;
 
-public record Post() {
+import org.springframework.data.annotation.Id;
+
+public record Post(@Id Integer id, String title, String content) {
 }
